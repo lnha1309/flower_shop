@@ -1,0 +1,100 @@
+﻿@model FlowerShop.Models.FLOWER
+@{
+    ViewBag.Title = "Chi Tiết Sản Phẩm";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+    var regex = new System.Text.RegularExpressions.Regex(@"(\*\*)(.*?)(\*\*)");
+}
+<style>
+    .product-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+</style>
+<!-- hero area -->
+<div class="breadcrumb-section breadcrumb-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="breadcrumb-text">
+                    <p>Xem thêm chi tiết</p>
+                    <h1>Sản phẩm</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end hero area -->
+<div class="single-product mt-150 mb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="single-product-img">
+                    <img src="@Url.Content("~/Images/" + Model.URL_IMAGE)" alt="@Model.FLOWER_NAME">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="single-product-content">
+                    <h3>@Model.FLOWER_NAME</h3>
+                    <p class="single-product-pricing">
+                        <span>Giá:</span> @string.Format("{0:#,##0}", Model.PRICE) đ
+                    </p>
+                    <p>@Html.Raw(regex.Replace(Model.DESCRIPTIONS, "<b>$2</b>"))</p>
+                    <div class="single-product-form">
+                        <form>
+                            <input type="number" placeholder="Số lượng" min="1" max="@Model.STOCK">
+                        </form>
+                        <a href="@Url.Action("AddToCart", "Cart", new { id = Model.ID_FLOWER })" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                        </a>
+                        <p><strong>Tồn kho:</strong> @Model.STOCK</p>
+                    </div>
+                    <h4>Chia sẻ:</h4>
+                    <ul class="product-share">
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Các sản phẩm liên quan -->
+<div class="more-products mb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="section-title">
+                    <h3><span class="orange-text">Xem thêm</span> các sản phẩm</h3>
+                    <p>Khám phá thêm những loại hoa khác</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var relatedFlower in ViewBag.RandomFlowers)
+            {
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item">
+                        <div class="product-image">
+                            <a href="@Url.Action("FlowerDetail", new { id = relatedFlower.ID_FLOWER })">
+                                <img src="@Url.Content("~/Images/" + relatedFlower.URL_IMAGE)" alt="@relatedFlower.FLOWER_NAME">
+                            </a>
+                        </div>
+                        <h3>@relatedFlower.FLOWER_NAME</h3>
+                        <p class="product-price">
+                            <span>Giá:</span>
+                            <span>@string.Format("{0:#,##0}", relatedFlower.PRICE) đ</span>
+                        </p>
+                        <a href="@Url.Action("AddToCart", "Cart", new { id = relatedFlower.ID_FLOWER })" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                        </a>
+
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

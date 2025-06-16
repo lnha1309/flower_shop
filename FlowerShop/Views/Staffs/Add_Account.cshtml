@@ -1,0 +1,72 @@
+﻿@model FlowerShop.Models.ACCOUNT
+@{
+    ViewBag.Title = "Add_Account";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<div class="container mt-4">
+    <h2 class="text-center">Tạo tài khoản</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <!-- USERNAME field -->
+            <div class="form-group row">
+                @Html.LabelFor(model => model.USERNAME, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.USERNAME, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.USERNAME, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- PASSWORDS field -->
+            <div class="form-group row">
+                @Html.LabelFor(model => model.PASSWORDS, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PASSWORDS, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PASSWORDS, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- ROLES field -->
+            <div class="form-group row">
+                @Html.LabelFor(model => model.ROLES, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.ROLES,
+                        new SelectList(new[] { "Customer", "Admin" }),
+                        "Select Role",
+                        new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.ROLES, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="form-group row">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Tạo tài khoản" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Back to List link -->
+    <div>
+        @Html.ActionLink("Quay lại trang", "ALL_Account", "Staffs", null, new { @class = "btn btn-secondary" })
+    </div>
+
+</div>
+
+

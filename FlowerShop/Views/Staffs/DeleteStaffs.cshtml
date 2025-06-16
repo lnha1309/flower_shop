@@ -1,0 +1,48 @@
+﻿@model FlowerShop.Models.STAFF
+@{
+    ViewBag.Title = "DeleteStaffs";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    <h4>Xóa Nhân Viên</h4>
+                </div>
+                <div class="card-body">
+                    <h5>Thông tin nhân viên</h5>
+                    <dl class="row">
+                        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.FULLNAME)</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.FULLNAME)</dd>
+
+                        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.PHONE_NUMBER)</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PHONE_NUMBER)</dd>
+
+                        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.EMAIL)</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.EMAIL)</dd>
+                    </dl>
+
+                    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+                    {
+                        <div class="alert alert-danger mt-3">
+                            <strong>Lỗi!</strong> @ViewBag.ErrorMessage
+                        </div>
+                    }
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="mt-4">
+                            <p class="text-danger">Bạn có chắc chắn muốn xóa nhân viên này?</p>
+                            <button type="submit" class="btn btn-danger">Xóa</button>
+                            @Html.ActionLink("Hủy bỏ", "All_Staff", null, new { @class = "btn btn-secondary ms-2" })
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

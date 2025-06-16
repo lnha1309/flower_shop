@@ -1,0 +1,358 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|d:\\huit\\l\u1EADp tr\u00ECnh web\\flowershop\\flowershop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\controllers\\occasionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\controllers\\occasionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\controllers\\occasionflowercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\controllers\\occasionflowercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\controllers\\flowercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\controllers\\flowercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\occasionflower\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\occasionflower\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\products\\all_flower.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\products\\all_flower.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\flower\\flowerdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\flower\\flowerdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\shared\\loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\shared\\loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\shared\\layoutpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\shared\\layoutpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\account\\userinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\account\\userinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\cart\\cartdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\cart\\cartdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\cart\\orderhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\cart\\orderhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\home\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\home\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\orders\\all_orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\orders\\all_orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\flowershop\\views\\shared\\admin_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B24FFA0D-052E-4FEC-88EA-DF1A59C75F21}|FlowerShop\\FlowerShop.csproj|solutionrelative:flowershop\\views\\shared\\admin_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 626,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "FlowerShop\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "FlowerShop\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:48:26.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "FlowerShop\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "FlowerShop\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:48:23.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OccasionsController.cs",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\OccasionsController.cs",
+              "RelativeDocumentMoniker": "FlowerShop\\Controllers\\OccasionsController.cs",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\OccasionsController.cs",
+              "RelativeToolTip": "FlowerShop\\Controllers\\OccasionsController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:48:20.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FlowerController.cs",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\FlowerController.cs",
+              "RelativeDocumentMoniker": "FlowerShop\\Controllers\\FlowerController.cs",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\FlowerController.cs",
+              "RelativeToolTip": "FlowerShop\\Controllers\\FlowerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:48:11.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductList.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\OccasionFlower\\ProductList.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\OccasionFlower\\ProductList.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\OccasionFlower\\ProductList.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\OccasionFlower\\ProductList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T14:39:47.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OccasionFlowerController.cs",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\OccasionFlowerController.cs",
+              "RelativeDocumentMoniker": "FlowerShop\\Controllers\\OccasionFlowerController.cs",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\OccasionFlowerController.cs",
+              "RelativeToolTip": "FlowerShop\\Controllers\\OccasionFlowerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:40:53.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FlowerDetail.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Flower\\FlowerDetail.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Flower\\FlowerDetail.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Flower\\FlowerDetail.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Flower\\FlowerDetail.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T10:17:48.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "All_Flower.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Products\\All_Flower.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Products\\All_Flower.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Products\\All_Flower.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Products\\All_Flower.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T10:16:19.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginLayout.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Shared\\LoginLayout.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Shared\\LoginLayout.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Shared\\LoginLayout.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Shared\\LoginLayout.cshtml",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAEwAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T09:04:14.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserInfo.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Account\\UserInfo.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Account\\UserInfo.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Account\\UserInfo.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Account\\UserInfo.cshtml",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAG0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T08:46:39.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "FlowerShop\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\CartController.cs",
+              "RelativeToolTip": "FlowerShop\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAuwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T08:39:03.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "FlowerShop\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FlowerShop\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwFMAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T07:51:19.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CartDetail.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Cart\\CartDetail.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Cart\\CartDetail.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Cart\\CartDetail.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Cart\\CartDetail.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T06:45:19.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "FlowerShop\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "FlowerShop\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T07:13:25.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T07:13:09.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Home\\Search.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Home\\Search.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Home\\Search.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Home\\Search.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T06:50:05.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderHistory.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Cart\\OrderHistory.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Cart\\OrderHistory.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Cart\\OrderHistory.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Cart\\OrderHistory.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T06:45:19.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAowMcAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T04:22:19.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LayoutPage.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Shared\\LayoutPage.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Shared\\LayoutPage.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Shared\\LayoutPage.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Shared\\LayoutPage.cshtml",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAAAM8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T06:19:49.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "All_Orders.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Orders\\All_Orders.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Orders\\All_Orders.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Orders\\All_Orders.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Orders\\All_Orders.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T06:42:11.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Admin_LayoutPage1.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Shared\\Admin_LayoutPage1.cshtml",
+              "RelativeDocumentMoniker": "FlowerShop\\Views\\Shared\\Admin_LayoutPage1.cshtml",
+              "ToolTip": "D:\\HUIT\\L\u1EADp tr\u00ECnh web\\FlowerShop\\FlowerShop\\Views\\Shared\\Admin_LayoutPage1.cshtml",
+              "RelativeToolTip": "FlowerShop\\Views\\Shared\\Admin_LayoutPage1.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T06:19:47.968Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

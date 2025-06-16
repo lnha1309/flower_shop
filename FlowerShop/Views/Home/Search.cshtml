@@ -1,0 +1,47 @@
+﻿@using FlowerShop.Models
+@model List<FLOWER>
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+}
+<style>
+    .product-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+</style>
+<div class="container">
+    <h2>Kết quả tìm kiếm</h2>
+
+    @if (Model.Count == 0)
+    {
+        <p>Không tìm thấy sản phẩm nào phù hợp.</p>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var flower in Model)
+            {
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item">
+                        <div class="product-image">
+                            <a href="@Url.Action("FlowerDetail", "Flower", new { id = flower.ID_FLOWER })">
+                                <img src="@Url.Content("~/Images/" + flower.URL_IMAGE)" alt="@flower.FLOWER_NAME">
+                            </a>
+                        </div>
+                        <h3>@flower.FLOWER_NAME</h3>
+                        <p class="product-price">
+                            <span>Giá:</span>
+                            <span>@string.Format("{0:#,##0}", flower.PRICE) đ</span>
+                        </p>
+                        <a href="@Url.Action("AddToCart", "Cart", new { id = flower.ID_FLOWER })" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

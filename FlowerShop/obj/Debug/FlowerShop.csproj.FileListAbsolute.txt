@@ -1,0 +1,240 @@
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\FlowerShop.dll.config
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\FlowerShop.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\FlowerShop.pdb
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\csc.exe
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\csc.exe.config
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\csc.rsp
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\csi.exe
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\csi.exe.config
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\csi.rsp
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.AppContext.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Console.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.IO.Compression.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Net.Http.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Net.Sockets.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.ValueTuple.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Xml.XPath.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\vbc.exe
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\vbc.exe.config
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\vbc.rsp
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\VBCSCompiler.exe
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\Newtonsoft.Json.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Net.Http.Formatting.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Helpers.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Http.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Http.WebHost.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Mvc.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Razor.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Webpages.Deployment.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Webpages.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Webpages.Razor.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Razor.xml
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Webpages.xml
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Webpages.Deployment.xml
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Webpages.Razor.xml
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Helpers.xml
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Mvc.xml
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\Newtonsoft.Json.xml
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Net.Http.Formatting.xml
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Http.xml
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\System.Web.Http.WebHost.xml
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\obj\Debug\FlowerShop.csproj.AssemblyReference.cache
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\obj\Debug\FlowerShop.csproj.CoreCompileInputs.cache
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\obj\Debug\FlowerShop.csproj.Up2Date
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\obj\Debug\FlowerShop.dll
+C:\Users\MINH THUAN\OneDrive\Máy tính\WebProject\FlowerShop\FlowerShop\obj\Debug\FlowerShop.pdb
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\FlowerShop.dll.config
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\FlowerShop.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\FlowerShop.pdb
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\csc.exe
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\csc.exe.config
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\csc.rsp
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\csi.exe
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\csi.exe.config
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\csi.rsp
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.AppContext.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Collections.Immutable.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Console.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Globalization.Calendars.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.IO.Compression.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.IO.FileSystem.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Net.Http.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Net.Sockets.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.ValueTuple.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Xml.XPath.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\vbc.exe
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\vbc.exe.config
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\vbc.rsp
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\VBCSCompiler.exe
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\roslyn\VBCSCompiler.exe.config
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\Microsoft.Web.Infrastructure.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\Newtonsoft.Json.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Net.Http.Formatting.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Helpers.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Http.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Http.WebHost.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Mvc.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Razor.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Webpages.Deployment.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Webpages.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Webpages.Razor.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Razor.xml
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Webpages.xml
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Webpages.Deployment.xml
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Webpages.Razor.xml
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Helpers.xml
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Mvc.xml
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\Newtonsoft.Json.xml
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Net.Http.Formatting.xml
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Http.xml
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\System.Web.Http.WebHost.xml
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\obj\Debug\FlowerShop.csproj.AssemblyReference.cache
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\obj\Debug\FlowerShop.csproj.CoreCompileInputs.cache
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\obj\Debug\FlowerShop.csproj.Up2Date
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\obj\Debug\FlowerShop.dll
+D:\TEST\LANTHU2\FlowerShop\FlowerShop\obj\Debug\FlowerShop.pdb
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\FlowerShop.dll.config
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\FlowerShop.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\FlowerShop.pdb
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\csc.exe
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\csc.exe.config
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\csc.rsp
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\csi.exe
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\csi.exe.config
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\csi.rsp
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.AppContext.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Collections.Immutable.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Console.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Globalization.Calendars.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.IO.Compression.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.IO.FileSystem.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Net.Http.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Net.Sockets.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.ValueTuple.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Xml.XPath.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\vbc.exe
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\vbc.exe.config
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\vbc.rsp
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\VBCSCompiler.exe
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\roslyn\VBCSCompiler.exe.config
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\Microsoft.Web.Infrastructure.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\Newtonsoft.Json.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Net.Http.Formatting.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Helpers.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Http.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Http.WebHost.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Mvc.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Razor.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Webpages.Deployment.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Webpages.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Webpages.Razor.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Razor.xml
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Webpages.xml
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Webpages.Deployment.xml
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Webpages.Razor.xml
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Helpers.xml
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Mvc.xml
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\Newtonsoft.Json.xml
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Net.Http.Formatting.xml
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Http.xml
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\System.Web.Http.WebHost.xml
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\obj\Debug\FlowerShop.csproj.AssemblyReference.cache
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\obj\Debug\FlowerShop.csproj.CoreCompileInputs.cache
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\obj\Debug\FlowerShop.csproj.Up2Date
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\obj\Debug\FlowerShop.dll
+D:\HUIT\Lập trình web\FlowerShop\FlowerShop\obj\Debug\FlowerShop.pdb

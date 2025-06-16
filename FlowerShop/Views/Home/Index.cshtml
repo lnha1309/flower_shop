@@ -1,0 +1,213 @@
+﻿@using FlowerShop.Models
+@model Dictionary<string, List<FLOWER>>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+}
+<style>
+    .product-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+</style>
+<!-- hero area -->
+<div class="breadcrumb-section breadcrumb-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="breadcrumb-text">
+                    <p>Hoa Tươi Cho Mọi Khoảnh Khắc</p>
+                    <h1>Trang chủ</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end hero area -->
+<!-- features list section -->
+<div class="list-section pt-80 pb-80">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <div class="list-box d-flex align-items-center">
+                    <div class="list-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Giao hàng cực nhanh</h3>
+                        <p>Miễn phí với đơn hàng trị giá trên 800.000đ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <div class="list-box d-flex align-items-center">
+                    <div class="list-icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Hỗ trợ 24/7</h3>
+                        <p>Nhận hỗ trợ mọi lúc, mọi ngày</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="list-box d-flex justify-content-start align-items-center">
+                    <div class="list-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Hoàn tiền</h3>
+                        <p>Nhận hoàn tiền trong vòng 3 ngày!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- end features list section -->
+<div class="product-section mt-150 mb-150">
+    <div class="container">
+        <div class="col-lg-8 offset-lg-2 text-center">
+            <div class="section-title">
+                <h3><span class="orange-text">Những Đóa Hoa Của Chúng Tôi</span></h3>
+                <p>Khám phá các loại hoa tươi đẹp theo từng dịp</p>
+            </div>
+        </div>
+
+        @foreach (var occasion in Model)
+        {
+            <div class="mb-5">
+                <div class="section-title">
+                    <h4 class="text-center mb-4 orange-text">@occasion.Key</h4>
+                </div>
+                <div class="row">
+                    @foreach (var flower in occasion.Value)
+                    {
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="single-product-item">
+                                <div class="product-image">
+                                    <a href="@Url.Action("FlowerDetail", "Flower", new { id = flower.ID_FLOWER })">
+                                        <img src="@Url.Content("~/Images/" + flower.URL_IMAGE)" alt="@flower.FLOWER_NAME">
+                                    </a>
+                                </div>
+                                <h3>@flower.FLOWER_NAME</h3>
+                                <p class="product-price">
+                                    <span>Giá:</span>
+                                    <span>@string.Format("{0:#,##0}", flower.PRICE) đ</span>
+                                </p>
+                                <a href="@Url.Action("AddToCart", "Cart", new { id = flower.ID_FLOWER })" class="cart-btn">
+                                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                                </a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<!-- latest news -->
+<div class="latest-news pt-150 pb-150">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="section-title">
+                    <h3><span class="orange-text">Tin</span> Tức</h3>
+                    <p>Chào mừng bạn đến với chuyên mục tin tức, nơi cập nhật những thông tin và xu hướng mới nhất trong ngành hoa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-latest-news">
+                    <a href="https://vnexpress.net/thoi-su/5-cach-giu-hoa-tuoi-lau-3978026.html">
+                        <div class="latest-news-bg" style="background-image: url('@Url.Content("~/Images/NewsImage1.png")');"></div>
+                    </a>
+                    <div class="news-text-box">
+                        <h3><a href="https://vnexpress.net/thoi-su/5-cach-giu-hoa-tuoi-lau-3978026.html">5 cách giữ được hoa tươi lâu hơn.</a></h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Admin</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 10 tháng 12, 2024</span>
+                        </p>
+                        <p class="excerpt">Thay nước hằng ngày và giữ cho bình cắm hoa luôn sạch sẽ những cách giúp hoa tươi lâu đơn giản nhất. </p>
+                        <a href="https://vnexpress.net/thoi-su/5-cach-giu-hoa-tuoi-lau-3978026.html" class="read-more-btn">Xem thêm <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-latest-news">
+                    <a href="https://vnexpress.net/hoa-no-quanh-nam-tren-ban-cong-3160752.html">
+                        <div class="latest-news-bg" style="background-image: url('@Url.Content("~/Images/NewsImage2.jpg")');"></div>
+                    </a>
+                    <div class="news-text-box">
+                        <h3><a href="https://vnexpress.net/hoa-no-quanh-nam-tren-ban-cong-3160752.html">Hoa nở quanh năm trên ban công.</a></h3>
+                        <p class="blog-meta">
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Admin</span>
+                            <span class="date"><i class="fas fa-calendar"></i>10 tháng 12, 2024</span>
+                        </p>
+                        <p class="excerpt">Chỉ với hai ban công và một số khoảng không gian hạn chế quanh nhà, chị Hương vẫn trồng được nhiều hoa đẹp...</p>
+                        <a href="https://vnexpress.net/hoa-no-quanh-nam-tren-ban-cong-3160752.html" class="read-more-btn">Xem thêm<i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                <div class="single-latest-news">
+                    <a href="https://vnexpress.net/chup-anh-hoa-co-lung-linh-trong-mua-2834139.html">
+                        <div class="latest-news-bg" style="background-image: url('@Url.Content("~/Images/NewsImage3.jpg")');"></div>
+                    </a>
+                    <div class="news-text-box">
+                        <h3><a href="https://vnexpress.net/chup-anh-hoa-co-lung-linh-trong-mua-2834139.html">Chụp ảnh hoa cỏ lung linh trong mưa.</a></h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Admin</span>
+                            <span class="date"><i class="fas fa-calendar"></i>10 tháng 12, 2024</span>
+                        </p>
+                        <p class="excerpt">Mưa tạo ra những giot nước trên hoa lá, tạo nên một vẻ đẹp rất lãng mạn. Đặc biệt, những giọt nước đọng trên ...</p>
+                        <a href="https://vnexpress.net/chup-anh-hoa-co-lung-linh-trong-mua-2834139.html" class="read-more-btn">Xem thêm<i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="https://vnexpress.net/tag/hoa-tuoi-136513" class="boxed-btn">Xem thêm tin tức</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end latest news -->
+<!-- logo carousel -->
+<div class="logo-carousel-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="logo-carousel-inner">
+                    <div class="single-logo-item">
+                        <img src="@Url.Content("~/assets/img/company-logos/1.png")" alt="Logo 1">
+                    </div>
+                    <div class="single-logo-item">
+                        <img src="@Url.Content("~/assets/img/company-logos/2.png")" alt="Logo 2">
+                    </div>
+                    <div class="single-logo-item">
+                        <img src="@Url.Content("~/assets/img/company-logos/3.png")" alt="Logo 3">
+                    </div>
+                    <div class="single-logo-item">
+                        <img src="@Url.Content("~/assets/img/company-logos/4.png")" alt="Logo 4">
+                    </div>
+                    <div class="single-logo-item">
+                        <img src="@Url.Content("~/assets/img/company-logos/5.png")" alt="Logo 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end logo carousel -->

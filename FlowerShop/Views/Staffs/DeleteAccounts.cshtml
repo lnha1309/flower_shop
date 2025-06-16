@@ -1,0 +1,60 @@
+﻿@model FlowerShop.Models.ACCOUNT
+@{
+    ViewBag.Title = "DeleteAccounts";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+<div class="container mt-5">
+    <h2 class="text-center mb-4 text-danger">Delete Account</h2>
+
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> Are you sure you want to delete this account? This action cannot be undone.
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h4>Account Details</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.USERNAME)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.USERNAME)
+                </dd>
+
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.PASSWORDS)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.PASSWORDS)
+                </dd>
+
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.ROLES)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.ROLES)
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="form-actions mt-4 text-center">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-danger btn-lg mx-2">Delete</button>
+            @Html.ActionLink("Quay lại trang", "ALL_Account", "Staffs", null, new { @class = "btn btn-secondary btn-lg mx-2" })
+        }
+    </div>
+</div>
+
+

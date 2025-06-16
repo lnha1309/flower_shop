@@ -1,0 +1,33 @@
+﻿@model FlowerShop.Models.OCCASION
+@{
+    ViewBag.Title = "ADD_OCCASIONS";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Thêm dịp mới</h2>
+
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="mb-3">
+            <label for="OCCASION_NAME" class="form-label">Tên dịp:</label>
+            @Html.EditorFor(model => model.OCCASION_NAME, new { htmlAttributes = new { @class = "form-control", @placeholder = "Nhập tên dịp" } })
+            @Html.ValidationMessageFor(model => model.OCCASION_NAME, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">
+                <i class="fa fa-plus"></i> Thêm
+            </button>
+            @Html.ActionLink("Quay lại danh sách", "All_OCCASIONS", "Occasions", new { @class = "btn btn-secondary" })
+        </div>
+    }
+</div>
+

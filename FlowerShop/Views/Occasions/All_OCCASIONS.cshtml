@@ -1,0 +1,62 @@
+﻿
+@model IEnumerable<FlowerShop.Models.OCCASION>
+
+@{
+    ViewBag.Title = "All_OCCASIONS";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success text-center">@TempData["SuccessMessage"]</div>
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary">Danh Sách Dịp Đặc Biệt</h2>
+
+    <div class="row mb-4">
+        <div class="col text-end">
+            @Html.ActionLink("Thêm Dịp Mới", "ADD_OCCASIONS", null, new { @class = "btn btn-primary btn-lg" })
+            @Html.ActionLink("Thêm Hoa Vào Dịp", "AddFlowerToOccasion", null, new { @class = "btn btn-success btn-lg ms-2" })
+        </div>
+    </div>
+
+    <div class="table-responsive shadow-lg">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th class="text-center">Tên Dịp</th>
+                    <th class="text-center">Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="2" class="text-center text-muted">Không có dịp nào được tìm thấy.</td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="text-center align-middle">
+                                @Html.DisplayFor(modelItem => item.OCCASION_NAME)
+                            </td>
+                            <td class="text-center align-middle">
+                                <div class="btn-group" role="group">
+                                    @Html.ActionLink("Sửa", "UPDATE_OCCASIONS", new { id = item.ID_OCCASION }, new { @class = "btn btn-warning btn-sm" })
+                                    @Html.ActionLink("Xóa", "DELETE_OCCASIONS", new { id = item.ID_OCCASION }, new { @class = "btn btn-danger btn-sm ms-2" })
+                                    @Html.ActionLink("Hoa Thuộc Dịp", "Details_Occasions", new { id = item.ID_OCCASION }, new { @class = "btn btn-info btn-sm ms-2" })
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
