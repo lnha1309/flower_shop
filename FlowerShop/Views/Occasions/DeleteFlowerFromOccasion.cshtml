@@ -1,0 +1,42 @@
+﻿@model FlowerShop.Models.FLOWEROCCASION
+@{
+    ViewBag.Title = "DeleteFlowerFromOccasion";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-danger">Xóa hoa khỏi dịp</h2>
+
+    <h3 class="text-center">Bạn có chắc chắn muốn xóa hoa khỏi dịp này?</h3>
+
+    <div class="alert alert-warning text-center">
+        <strong>Chú ý:</strong> Sau khi xóa, thông tin này sẽ không thể phục hồi.
+    </div>
+
+    <div>
+        <h4>Thông tin hoa</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3">Tên hoa:</dt>
+            <dd class="col-sm-9">@Model.FLOWER.FLOWER_NAME</dd>
+
+            <dt class="col-sm-3">Mô tả:</dt>
+            <dd class="col-sm-9">@Model.FLOWER.DESCRIPTIONS</dd>
+
+            <dt class="col-sm-3">Giá:</dt>
+            <dd class="col-sm-9">@Model.FLOWER.PRICE</dd>
+        </dl>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions text-center">
+            <input type="submit" value="Xóa" class="btn btn-danger btn-lg" />
+            <a href="@Url.Action("All_OCCASIONS", "Occasions")" class="btn btn-secondary btn-lg ml-3">Quay lại danh sách</a>
+        </div>
+    }
+</div>
+
+

@@ -1,0 +1,103 @@
+﻿@model List<FlowerShop.Controllers.CartItem>
+@{
+    ViewBag.Title = "Giỏ hàng";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+}
+<div class="breadcrumb-section breadcrumb-bg py-4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="breadcrumb-text">
+                    <p class="mb-1">Hoa Tươi Cho Mọi Khoảnh Khắc</p>
+                    <h1 class="mb-0">Giỏ hàng</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cart-section my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 mb-4">
+                <div class="cart-table-wrap table-responsive">
+                    <form id="cartForm" method="post" action="@Url.Action("UpdateCart", "Cart")">
+                        <table class="cart-table table table-bordered">
+                            <thead class="thead-light">
+                                <tr class="table-head-row">
+                                    <th class="text-center">Xóa</th>
+                                    <th>Hình ảnh</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Tổng cộng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model != null && Model.Count > 0)
+                                {
+                                    foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td class="text-center">
+                                                <a href="@Url.Action("RemoveFromCart", "Cart", new { id = item.Flower.ID_FLOWER })" class="text-danger">
+                                                    <i class="far fa-window-close"></i>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="@Url.Content("~/Images/" + item.Flower.URL_IMAGE)" alt="@item.Flower.FLOWER_NAME" class="img-fluid" style="max-width: 100px;">
+                                            </td>
+                                            <td>@item.Flower.FLOWER_NAME</td>
+                                            <td>@string.Format("{0:#,##0}", item.Flower.PRICE) đ</td>
+                                            <td>
+                                                <input type="number" name="quantity_@item.Flower.ID_FLOWER" value="@item.Quantity" min="1" class="form-control text-center">
+                                            </td>
+                                            <td>@string.Format("{0:#,##0}", item.Flower.PRICE * item.Quantity) đ</td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="6" class="text-center">Giỏ hàng trống!</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="total-section border rounded p-4">
+                    <h5 class="mb-3">Tổng cộng</h5>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><strong>Tổng cộng:</strong></td>
+                                <td>@string.Format("{0:#,##0}", Model?.Sum(c => c.Flower.PRICE * c.Quantity) ?? 0) đ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="cart-buttons d-flex flex-column gap-3">
+                        <button type="button" class="btn btn-primary w-100 py-2 rounded-pill" onclick="document.getElementById('cartForm').submit();">
+                            <i class="fas fa-sync-alt me-2"></i>Cập nhật
+                        </button>
+                        <button type="button" class="btn btn-success w-100 py-2 rounded-pill" onclick="document.getElementById('checkoutForm').submit();" style="margin-top:1rem">
+                            <i class="fas fa-check me-2"></i>Xác nhận đơn hàng
+                        </button>
+                        <a href="@Url.Action("OrderHistory", "Cart")" class="btn btn-outline-secondary w-100 py-2 rounded-pill" style="margin-top:1rem">
+                            <i class="fas fa-history me-2"></i>Xem Đơn Hàng
+                        </a>
+                        <form id="checkoutForm" action="@Url.Action("Checkout", "Cart")" method="post"></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function updateCart(id, quantity) {
+        const url = '@Url.Action("UpdateCart", "Cart")';
+        window.location.href = `${url}?id=${id}&quantity=${quantity}`;
+    }
+</script>

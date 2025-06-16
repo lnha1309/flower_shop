@@ -1,0 +1,73 @@
+﻿@model FlowerShop.Models.FLOWER
+@{
+    ViewBag.Title = "DeleteFlower";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-danger text-white">
+            <h3 class="mb-0">Xác nhận xóa hoa</h3>
+        </div>
+        <div class="card-body">
+            <p class="alert alert-warning">
+                Bạn có chắc chắn muốn xóa hoa này không? Hành động này không thể hoàn tác.
+            </p>
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.FLOWER_NAME)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.FLOWER_NAME)
+                </dd>
+
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.DESCRIPTIONS)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.DESCRIPTIONS)
+                </dd>
+
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.PRICE)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.PRICE)
+                </dd>
+
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.URL_IMAGE)
+                </dt>
+                <dd class="col-sm-8">
+                    <img src="~/Images/@Model.URL_IMAGE" alt="Flower Image" class="img-thumbnail" />
+                </dd>
+
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.STOCK)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.STOCK)
+                </dd>
+            </dl>
+        </div>
+        <div class="card-footer text-end">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <button type="submit" class="btn btn-danger me-2">
+                    <i class="bi bi-trash"></i> Xóa
+                </button>
+                @Html.ActionLink("Quay lại danh sách", "All_Flower", null, new { @class = "btn btn-secondary" })
+            }
+        </div>
+    </div>
+</div>
+
+

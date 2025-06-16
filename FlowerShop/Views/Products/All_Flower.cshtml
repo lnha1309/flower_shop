@@ -1,0 +1,63 @@
+﻿@model IEnumerable<FlowerShop.Models.FLOWER>
+@{
+    ViewBag.Title = "All_Flower";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+@{
+    var regex = new System.Text.RegularExpressions.Regex(@"(\*\*)(.*?)(\*\*)");
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success text-center">@TempData["SuccessMessage"]</div>
+}
+<h2 class="text-center">Danh Sách Hoa</h2>
+<form action="@Url.Action("SearchFlower", "Products")" method="get" class="mb-4">
+    <div class="input-group">
+        <input type="text" name="keyword" class="form-control" placeholder="Tìm kiếm hoa..."
+               value="@ViewBag.Keyword" />
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-search"></i> Tìm Kiếm
+        </button>
+    </div>
+</form>
+<p>
+    @Html.ActionLink("Thêm hoa mới", "Add_Flower", null, new { @class = "btn btn-primary mb-3" })
+</p>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Tên Hoa</th>
+                <th>Mô Tả</th>
+                <th>Giá Tiền</th>
+                <th>Hình Ảnh</th>
+                <th>Số Lượng Tồn</th>
+                <th>Thao Tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.FLOWER_NAME)</td>
+                    <td>@Html.Raw(regex.Replace(item.DESCRIPTIONS, "<b>$2</b>"))</td>
+                    <td>@Html.DisplayFor(modelItem => item.PRICE)</td>
+                    <td>
+                        <img src="~/Images/@item.URL_IMAGE" alt="@item.FLOWER_NAME" style="max-height: 100px; max-width: 100px;" />
+                    </td>
+                    <td>@Html.DisplayFor(modelItem => item.STOCK)</td>
+                    <td>
+                        <a href="@Url.Action("UpdateFlower","Products", new { id = item.ID_FLOWER })" class="btn btn-sm btn-warning">Chỉnh sửa</a>
+                        <a href="@Url.Action("DetailFlower","Products", new { id = item.ID_FLOWER })" class="btn btn-sm btn-info">Xem chi tiết</a>
+                        <a href="@Url.Action("DeleteFlower","Products", new { id = item.ID_FLOWER })" class="btn btn-sm btn-danger">Xoá</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+

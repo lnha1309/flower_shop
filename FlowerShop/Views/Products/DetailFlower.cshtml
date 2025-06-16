@@ -1,0 +1,59 @@
+﻿@model FlowerShop.Models.FLOWER
+@{
+    ViewBag.Title = "DetailFlower";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+<h2 class="text-center mt-4">Chi Tiết Hoa</h2>
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Thông tin chi tiết</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.FLOWER_NAME)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.FLOWER_NAME)
+                </dd>
+
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.DESCRIPTIONS)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.DESCRIPTIONS)
+                </dd>
+
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.PRICE)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.PRICE)
+                </dd>
+
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.URL_IMAGE)
+                </dt>
+                <dd class="col-sm-8">
+                    <img src="~/Images/@Model.URL_IMAGE" alt="Image" class="img-fluid img-thumbnail" />
+                </dd>
+
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.STOCK)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.STOCK)
+                </dd>
+            </dl>
+        </div>
+        <div class="card-footer text-end">
+            @Html.ActionLink("Sửa", "UpdateFlower", new { id = Model.ID_FLOWER }, new { @class = "btn btn-primary me-2" })
+            @Html.ActionLink("Quay lại danh sách", "All_Flower", null, new { @class = "btn btn-secondary" })
+        </div>
+    </div>
+</div>
+
+

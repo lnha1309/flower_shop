@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "AddFlowerToOccasion";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary mb-4">Thêm Hoa Vào Dịp</h2>
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger text-center">
+            <i class="fas fa-exclamation-circle"></i> @ViewBag.ErrorMessage
+        </div>
+    }
+
+    @using (Html.BeginForm("AddFlowerToOccasion", "Occasions", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h5 class="m-0">Thông Tin Thêm Hoa</h5>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <label for="ID_FLOWER" class="form-label fw-bold">Chọn Hoa:</label>
+                            @Html.DropDownList("ID_FLOWER", (SelectList)ViewBag.Flowers, "Chọn hoa", new { @class = "form-select", @id = "ID_FLOWER" })
+                            <small class="form-text text-muted">Vui lòng chọn hoa bạn muốn thêm vào dịp.</small>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="ID_OCCASION" class="form-label fw-bold">Chọn Dịp:</label>
+                            @Html.DropDownList("ID_OCCASION", (SelectList)ViewBag.Occasions, "Chọn dịp", new { @class = "form-select", @id = "ID_OCCASION" })
+                            <small class="form-text text-muted">Vui lòng chọn dịp cần thêm hoa.</small>
+                        </div>
+                    </div>
+
+                    <div class="card-footer text-center">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-plus-circle"></i> Thêm Hoa
+                        </button>
+                        @Html.ActionLink("Quay Lại", "All_OCCASIONS", "Occasions", new { @class = "btn btn-secondary ms-3" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+

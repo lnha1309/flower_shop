@@ -1,0 +1,39 @@
+﻿@model FlowerShop.Models.OCCASION
+@{
+    ViewBag.Title = "DELETE_OCCASIONS";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4 text-danger">Xóa dịp</h2>
+
+    <h4 class="text-center">Bạn có chắc chắn muốn xóa dịp này?</h4>
+    <div class="card shadow mt-4">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-4 font-weight-bold">Tên dịp:</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.OCCASION_NAME)</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-4">
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "d-inline" }))
+        {
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-danger me-3">
+                <i class="fa fa-trash"></i> Xóa
+            </button>
+        }
+        @Html.ActionLink("Quay lại danh sách", "All_OCCASIONS", "Occasions", new { @class = "btn btn-secondary" })
+    </div>
+</div>
+
+

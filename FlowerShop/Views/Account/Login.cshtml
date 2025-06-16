@@ -1,0 +1,174 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/LoginLayout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/css/scss/login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="content-background">
+        <div class="login-reg-panel">
+            <div class="login-info-box">
+                <h2>Bạn đã có tài khoản</h2>
+                <p>Hãy đăng nhập ngay nhé!</p>
+                <label id="label-register" for="log-reg-show">ĐĂNG NHẬP</label>
+                <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
+            </div>
+
+            <div class="register-info-box">
+                <h2>Bạn chưa có tài khoản?</h2>
+                <p>Hãy tham gia với chúng tôi!</p>
+                <label id="label-login" for="log-login-show">ĐĂNG KÝ</label>
+                <input type="radio" name="active-log-panel" id="log-login-show">
+            </div>
+
+            <div class="white-panel">
+                <!-- Phần đăng nhập -->
+                <div class="login-show">
+                    <h2>ĐĂNG NHẬP</h2>
+
+                    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+                    {
+                        <div class="error-message">
+                            @ViewBag.ErrorMessage
+                        </div>
+                    }
+
+                    <form action="@Url.Action("Login", "Account")" method="post">
+                        <input type="text" name="username" placeholder="Tài khoản" required>
+                        <input type="password" name="password" placeholder="Mật khẩu" required>
+                        <input type="submit" value="Đăng nhập" class="btn-login">
+                    </form>
+                </div>
+
+                <!-- Phần đăng ký -->
+                <div class="register-show">
+                    <h2>ĐĂNG KÝ</h2>
+
+                    @* Hiển thị thông báo lỗi nếu có *@
+                    @if (ViewBag.ErrorMessage != null)
+                    {
+                        <div class="alert alert-danger">
+                            @ViewBag.ErrorMessage
+                        </div>
+                    }
+
+                    @* Hiển thị thông báo thành công nếu có *@
+                    @if (ViewBag.SuccessMessage != null)
+                    {
+                        <div class="alert alert-success">
+                            @ViewBag.SuccessMessage
+                        </div>
+                    }
+
+                    <form action="@Url.Action("Register", "Account")" method="post">
+                        <input type="text" name="username" placeholder="Tài khoản" required>
+                        <input type="password" name="password" placeholder="Mật khẩu" required>
+                        <input type="password" name="confirmPassword" placeholder="Nhập lại mật khẩu" required>
+                        <input type="submit" value="Đăng ký" class="btn-register">
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/login.js"></script>
+    <script>
+$(document).ready(function() {
+    // Validate form đăng ký
+    $('.register-show form').on('submit', function(e) {
+        e.preventDefault(); // Ngăn submit mặc định
+
+        // Lấy các trường input
+        var username = $(this).find('input[name="username"]');
+        var password = $(this).find('input[name="password"]');
+        var confirmPassword = $(this).find('input[name="confirmPassword"]');
+
+        // Xóa các thông báo lỗi cũ
+        $('.error-message').remove();
+
+        // Biến kiểm tra form
+        var isValid = true;
+
+        // Validate username
+        if (username.val().trim() === '') {
+            username.after('<div class="error-message text-danger">Tên tài khoản không được để trống!</div>');
+            isValid = false;
+        } else if (username.val().trim().length > 20) {
+            username.after('<div class="error-message text-danger">Tên tài khoản không được vượt quá 20 ký tự!</div>');
+            isValid = false;
+        }
+
+        // Validate password
+        if (password.val().trim() === '') {
+            password.after('<div class="error-message text-danger">Mật khẩu không được để trống!</div>');
+            isValid = false;
+        } else if (password.val().trim().length < 6 || password.val().trim().length > 20) {
+            password.after('<div class="error-message text-danger">Mật khẩu phải từ 6 đến 20 ký tự!</div>');
+            isValid = false;
+        }
+
+        // Validate confirm password
+        if (confirmPassword.val().trim() === '') {
+            confirmPassword.after('<div class="error-message text-danger">Vui lòng nhập lại mật khẩu!</div>');
+            isValid = false;
+        } else if (password.val().trim() !== confirmPassword.val().trim()) {
+            confirmPassword.after('<div class="error-message text-danger">Mật khẩu xác nhận không khớp!</div>');
+            isValid = false;
+        }
+
+        // Nếu validate thành công, thực hiện Ajax
+        if (isValid) {
+            $.ajax({
+                url: '@Url.Action("Register", "Account")', // Điều chỉnh lại tên Controller
+                type: 'POST',
+                data: {
+                    username: username.val().trim(),
+                    password: password.val().trim(),
+                    confirmPassword: confirmPassword.val().trim()
+                },
+                success: function(response) {
+                    if (response.success) {
+                        // Hiển thị thông báo thành công
+                        $('.register-show').prepend('<div class="alert alert-success">' + response.message + '</div>');
+
+                        // Xóa nội dung các trường
+                        username.val('');
+                        password.val('');
+                        confirmPassword.val('');
+                    } else {
+                        // Hiển thị lỗi
+                        $('.register-show').prepend('<div class="alert alert-danger">' + response.message + '</div>');
+                    }
+                },
+                error: function() {
+                    // Xử lý lỗi kết nối
+                    $('.register-show').prepend('<div class="alert alert-danger">Đã xảy ra lỗi. Vui lòng thử lại.</div>');
+                }
+            });
+        }
+    });
+
+    // Xóa thông báo lỗi khi người dùng bắt đầu nhập
+    $('.register-show input').on('input', function() {
+        $(this).next('.error-message').remove();
+        // Xóa các thông báo alert cũ
+        $('.alert').remove();
+    });
+});
+    </script>
+</body>
+</html>
+

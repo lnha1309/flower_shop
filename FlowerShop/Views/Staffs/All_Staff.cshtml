@@ -1,0 +1,67 @@
+﻿@model IEnumerable<FlowerShop.Models.STAFF>
+@{
+    ViewBag.Title = "All_Staff";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success text-center">@TempData["SuccessMessage"]</div>
+}
+<div class="container mt-4">
+    <h2 class="text-center">Danh Sách Nhân Viên</h2>
+
+    <p>
+        @Html.ActionLink("Tạo tài khoản", "Add_Staffs", null, new { @class = "btn btn-success mb-3" })
+
+        @Html.ActionLink("Danh sách các tài khoản", "ALL_Account", null, new { @class = "btn btn-primary mb-3 me-2" })
+
+    </p>
+
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>
+                    Họ tên
+                </th>
+                <th>
+                    Số điện thoại
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Id tài khoản
+                </th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FULLNAME)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PHONE_NUMBER)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EMAIL)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID_ACCOUNT)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Sửa", "Update_Staffs", new { id = item.ID_STAFF }, new { @class = "btn btn-warning btn-sm me-2" })
+                        @Html.ActionLink("Xoá", "DeleteStaffs", new { id = item.ID_STAFF }, new { @class = "btn btn-danger btn-sm" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+</div>
+
+

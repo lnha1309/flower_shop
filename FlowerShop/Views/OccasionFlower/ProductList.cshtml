@@ -1,0 +1,122 @@
+﻿@using FlowerShop.Models
+@model IEnumerable<KeyValuePair<string, List<FLOWER>>>
+
+@{
+    ViewBag.Title = "ProductList";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+}
+<style>
+    .product-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+</style>
+<div class="breadcrumb-section breadcrumb-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="breadcrumb-text">
+                    <p>Hoa Tươi Cho Mọi Khoảnh Khắc</p>
+                    <h1>Cửa hàng</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- products -->
+<div class="product-section mt-150 mb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-filters">
+                    <ul>
+                        <li class="active" data-filter="*">All</li>
+                        @foreach (var occasion in ViewBag.Occasions)
+                        {
+                            <li data-filter=".@occasion.OCCASION_NAME.ToLower().Replace(" ", "-")">
+                                @occasion.OCCASION_NAME
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products List -->
+        <div class="row product-lists">
+            @foreach (var occasion in Model)
+            {
+                <div class="product-occasion @occasion.Key.ToLower().Replace(" ", "-")">
+                    <h4 class="text-center mb-4">@occasion.Key</h4>
+                    <div class="row">
+                        @foreach (var flower in occasion.Value)
+                        {
+                            <div class="col-lg-4 col-md-6 text-center">
+                                <div class="single-product-item">
+                                    <div class="product-image">
+                                        <a href="@Url.Action("FlowerDetail", "Flower", new { id = flower.ID_FLOWER })">
+                                            <img src="@Url.Content("~/Images/" + flower.URL_IMAGE)" alt="@flower.FLOWER_NAME">
+                                        </a>
+                                    </div>
+                                    <h3>@flower.FLOWER_NAME</h3>
+                                    <p class="product-price">
+                                        <span>Giá:</span>
+                                        <span>@string.Format("{0:#,##0}", flower.PRICE) đ</span>
+                                    </p>
+                                    <a href="@Url.Action("AddToCart", "Cart", new { id = flower.ID_FLOWER })" class="cart-btn">
+                                        <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                                    </a>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Pagination -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="pagination-wrap">
+                    <ul>
+                        <li><a href="#">Prev</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a class="active" href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end products -->
+<!-- Add jQuery for filtering -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // When clicking a filter
+        $(".product-filters ul li").click(function () {
+            var filterValue = $(this).attr("data-filter");
+
+            // Highlight active filter
+            $(".product-filters ul li").removeClass("active");
+            $(this).addClass("active");
+
+            // Show products based on filter
+            if (filterValue == "*") {
+                $(".product-lists .product-occasion").show(); // Show all
+            } else {
+                $(".product-lists .product-occasion").each(function () {
+                    if ($(this).hasClass(filterValue.substring(1))) {
+                        $(this).show(); // Show filtered products
+                    } else {
+                        $(this).hide(); // Hide non-matching products
+                    }
+                });
+            }
+        });
+    });
+</script>

@@ -1,0 +1,61 @@
+﻿@model FlowerShop.Models.ORDER
+@{
+    ViewBag.Title = "Update_Orders";
+    Layout = "~/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+<h2>Update Order</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container">
+        <h4>ORDER</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID_ORDER)
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.ID_CUSTOMER, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ID_CUSTOMER, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ID_CUSTOMER, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.ORDER_DATE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ORDER_DATE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ORDER_DATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.TOTAL_AMOUNT, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TOTAL_AMOUNT, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TOTAL_AMOUNT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.ORDER_STATUS, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ORDER_STATUS,
+                    new SelectList(new[] { "Đang xử lí", "Đã giao", "Hủy" }),
+                    "Select Role",
+                    new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ORDER_STATUS, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+                @Html.ActionLink("Back to List", "All_Orders", null, new { @class = "btn btn-secondary" })
+            </div>
+        </div>
+    </div>
+}

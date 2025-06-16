@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QL_CHHoa" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.FLOWERS" Member="FLOWERs">
+    <Type Name="FLOWER">
+      <Column Name="ID_FLOWER" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FLOWER_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DESCRIPTIONS" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="PRICE" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Column Name="URL_IMAGE" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="STOCK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="FLOWER_FLOWEROCCASION" Member="FLOWEROCCASIONs" ThisKey="ID_FLOWER" OtherKey="ID_FLOWER" Type="FLOWEROCCASION" />
+      <Association Name="FLOWER_ORDERDETAIL" Member="ORDERDETAILs" ThisKey="ID_FLOWER" OtherKey="ID_FLOWER" Type="ORDERDETAIL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACCOUNTS" Member="ACCOUNTs">
+    <Type Name="ACCOUNT">
+      <Column Name="ID_ACCOUNT" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="PASSWORDS" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="ROLES" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="ACCOUNT_CUSTOMER" Member="CUSTOMERs" ThisKey="ID_ACCOUNT" OtherKey="ID_ACCOUNT" Type="CUSTOMER" />
+      <Association Name="ACCOUNT_STAFF" Member="STAFFs" ThisKey="ID_ACCOUNT" OtherKey="ID_ACCOUNT" Type="STAFF" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CUSTOMERS" Member="CUSTOMERs">
+    <Type Name="CUSTOMER">
+      <Column Name="ID_CUSTOMER" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FULLNAME" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="PHONE_NUMBER" Type="System.String" DbType="Char(11)" CanBeNull="true" />
+      <Column Name="ADDRESSS" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ID_ACCOUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="CUSTOMER_ORDER" Member="ORDERs" ThisKey="ID_CUSTOMER" OtherKey="ID_CUSTOMER" Type="ORDER" />
+      <Association Name="ACCOUNT_CUSTOMER" Member="ACCOUNT" ThisKey="ID_ACCOUNT" OtherKey="ID_ACCOUNT" Type="ACCOUNT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FLOWEROCCASIONS" Member="FLOWEROCCASIONs">
+    <Type Name="FLOWEROCCASION">
+      <Column Name="ID_FLOWER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_OCCASION" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="FLOWER_FLOWEROCCASION" Member="FLOWER" ThisKey="ID_FLOWER" OtherKey="ID_FLOWER" Type="FLOWER" IsForeignKey="true" />
+      <Association Name="FLOWER1_FLOWEROCCASION" Member="FLOWER1" ThisKey="ID_FLOWER" OtherKey="ID_FLOWER" Type="FLOWER1" IsForeignKey="true" />
+      <Association Name="OCCASION_FLOWEROCCASION" Member="OCCASION" ThisKey="ID_OCCASION" OtherKey="ID_OCCASION" Type="OCCASION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FLOWERS" Member="FLOWER1s">
+    <Type Name="FLOWER1">
+      <Column Name="ID_FLOWER" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FLOWER_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DESCRIPTIONS" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="PRICE" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Column Name="URL_IMAGE" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="STOCK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="FLOWER1_FLOWEROCCASION" Member="FLOWEROCCASIONs" ThisKey="ID_FLOWER" OtherKey="ID_FLOWER" Type="FLOWEROCCASION" />
+      <Association Name="FLOWER1_ORDERDETAIL" Member="ORDERDETAILs" ThisKey="ID_FLOWER" OtherKey="ID_FLOWER" Type="ORDERDETAIL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OCCASIONS" Member="OCCASIONs">
+    <Type Name="OCCASION">
+      <Column Name="ID_OCCASION" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OCCASION_NAME" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="OCCASION_FLOWEROCCASION" Member="FLOWEROCCASIONs" ThisKey="ID_OCCASION" OtherKey="ID_OCCASION" Type="FLOWEROCCASION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ORDERDETAILS" Member="ORDERDETAILs">
+    <Type Name="ORDERDETAIL">
+      <Column Name="ID_ORDER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_FLOWER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="QUANTITY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PRICE" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Association Name="FLOWER_ORDERDETAIL" Member="FLOWER" ThisKey="ID_FLOWER" OtherKey="ID_FLOWER" Type="FLOWER" IsForeignKey="true" />
+      <Association Name="FLOWER1_ORDERDETAIL" Member="FLOWER1" ThisKey="ID_FLOWER" OtherKey="ID_FLOWER" Type="FLOWER1" IsForeignKey="true" />
+      <Association Name="ORDER_ORDERDETAIL" Member="ORDER" ThisKey="ID_ORDER" OtherKey="ID_ORDER" Type="ORDER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ORDERS" Member="ORDERs">
+    <Type Name="ORDER">
+      <Column Name="ID_ORDER" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_CUSTOMER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ORDER_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TOTAL_AMOUNT" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Column Name="ORDER_STATUS" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="ORDER_ORDERDETAIL" Member="ORDERDETAILs" ThisKey="ID_ORDER" OtherKey="ID_ORDER" Type="ORDERDETAIL" />
+      <Association Name="CUSTOMER_ORDER" Member="CUSTOMER" ThisKey="ID_CUSTOMER" OtherKey="ID_CUSTOMER" Type="CUSTOMER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.STAFFS" Member="STAFFs">
+    <Type Name="STAFF">
+      <Column Name="ID_STAFF" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FULLNAME" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="PHONE_NUMBER" Type="System.String" DbType="Char(11)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="ID_ACCOUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ACCOUNT_STAFF" Member="ACCOUNT" ThisKey="ID_ACCOUNT" OtherKey="ID_ACCOUNT" Type="ACCOUNT" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
